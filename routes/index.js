@@ -35,5 +35,14 @@ router.get('/assets/css/fontawesome-all.min.css', function(req, res, next) {
 
 });
 
+router.get('/assets/webfonts/fa-brands-400.woff2', function(req, res, next) {
+  
+  
+  res.sendFile(path.join(__dirname ,'htmls','assets','webfonts','fa-brands-400.woff2'));
+
+});
+
+
+
 
 module.exports = router;
