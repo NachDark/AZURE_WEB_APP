@@ -1,3 +1,7 @@
+/*habria que realizar la llamada relativa y que haga la llamada al archivo de manera relativa tambien */
+
+
+
 var express = require('express');
 var router = express.Router();
 var path = require('path');
@@ -53,8 +57,6 @@ router.get('/assets/webfonts/fa-solid-900.woff2', function(req, res, next) {
   res.sendFile(path.join(__dirname ,'htmls','assets','webfonts','fa-solid-900.woff2'));
 
 });
-
-
 
 
 
