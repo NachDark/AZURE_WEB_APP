@@ -21,11 +21,19 @@ router.get('/assets/css/main.css', function(req, res, next) {
 
 });
 
-router.get('/assets/css/images/bg_original.jpg', function(req, res, next) {
+router.get('/assets/css/images/bg.jpg', function(req, res, next) {
   
   
-  res.sendFile(path.join(__dirname ,'htmls','assets','css','images','bg_original.jpg'));
+  res.sendFile(path.join(__dirname ,'htmls','assets','css','images','bg.jpg'));
 
 });
+
+router.get('fontawesome-all.min.css', function(req, res, next) {
+  
+  
+  res.sendFile(path.join(__dirname ,'htmls','assets','css','fontawesome-all.min.css'));
+
+});
+
 
 module.exports = router;
