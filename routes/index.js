@@ -21,10 +21,10 @@ router.get('/assets/css/main.css', function(req, res, next) {
 
 });
 
-router.get('/assets/css/images/overlay-pattern.png', function(req, res, next) {
+router.get('/assets/css/images/bg_original.jpg', function(req, res, next) {
   
-  console.log(__dirname + '\\htmls\\assets\\css\\main.css');
-  res.sendFile(path.join(__dirname ,'htmls','assets','css','images','overlay-pattern.png'));
+  
+  res.sendFile(path.join(__dirname ,'htmls','assets','css','images','bg_original.jpg'));
 
 });
 
