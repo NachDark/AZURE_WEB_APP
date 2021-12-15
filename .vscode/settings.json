@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/832f11d4-0446-4062-b655-c418a71bcce7/resourceGroups/prueba/providers/Microsoft.Web/sites/IgnacioGaonaWeb",
+    "appService.deploySubpath": "."
+}
