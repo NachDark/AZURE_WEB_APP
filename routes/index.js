@@ -41,6 +41,22 @@ router.get('/assets/webfonts/fa-brands-400.woff2', function(req, res, next) {
   res.sendFile(path.join(__dirname ,'htmls','assets','webfonts','fa-brands-400.woff2'));
 
 });
+router.get('/assets/css/images/overlay.svg', function(req, res, next) {
+  
+  
+  res.sendFile(path.join(__dirname ,'htmls','assets','images','overlay.svg'));
+
+});
+router.get('/assets/webfonts/fa-solid-900.woff2', function(req, res, next) {
+  
+  
+  res.sendFile(path.join(__dirname ,'htmls','assets','webfonts','fa-solid-900.woff2'));
+
+});
+
+
+
+
 
 
 
