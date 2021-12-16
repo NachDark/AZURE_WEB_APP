@@ -18,6 +18,7 @@ router.get('/', function(req, res, next) {
 
 
 //CSS defined
+/*
 router.get('/assets/css/main.css', function(req, res, next) {
   
   console.log(__dirname + '\\htmls\\assets\\css\\main.css');
@@ -57,6 +58,14 @@ router.get('/assets/webfonts/fa-solid-900.woff2', function(req, res, next) {
   res.sendFile(path.join(__dirname ,'htmls','assets','webfonts','fa-solid-900.woff2'));
 
 });
+*/
+router.get('/assets/:path', function(req, res, next) {
+  
+  console.log(path.join(__dirname ,'htmls','assets',path));
+  res.sendFile(path.join(__dirname ,'htmls','assets',path));
+
+});
+
 
 
 
