@@ -59,6 +59,16 @@ router.get('/assets/webfonts/fa-solid-900.woff2', function(req, res, next) {
 
 });
 */
+router.get('/assets/:path', function(req, res, next) {
+
+  res.sendFile(path.join(__dirname ,'htmls','assets',req.params.path));
+
+});
+router.get('/assets/:path/:path2', function(req, res, next) {
+
+  res.sendFile(path.join(__dirname ,'htmls','assets',req.params.path,req.params.path2));
+
+});
 
 router.get('/assets/:path/:path2/:path3', function(req, res, next) {
 
