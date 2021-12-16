@@ -61,8 +61,8 @@ router.get('/assets/webfonts/fa-solid-900.woff2', function(req, res, next) {
 */
 router.get('/assets/:path', function(req, res, next) {
   
-  console.log(path.join(__dirname ,'htmls','assets',path));
-  res.sendFile(path.join(__dirname ,'htmls','assets',path));
+  console.log(path.join(__dirname ,'htmls','assets',req.params.path));
+  res.sendFile(path.join(__dirname ,'htmls','assets',req.params.path));
 
 });
 
